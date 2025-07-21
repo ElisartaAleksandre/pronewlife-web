@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PRO NEW LIFE</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: #f5f8fa;
+      color: #333;
+      scroll-behavior: smooth;
+    }
+
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: rgba(255, 255, 255, 0.95);
+      padding: 20px 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      z-index: 100;
+    }
+
+    nav .logo {
+      font-size: 1.5em;
+      font-weight: 600;
+      color: #4caf50;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #4caf50;
+    }
+
+    .hero {
+      position: relative;
+      height: 100vh;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .background-video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: 0;
+    }
+
+    .hero-content {
+      position: relative;
+      color: white;
+      z-index: 1;
+      max-width: 700px;
+      padding: 20px;
+    }
+
+    .hero-content h1 {
+      font-size: 3em;
+      margin-bottom: 20px;
+    }
+
+    .hero-content p {
+      font-size: 1.2em;
+      margin-bottom: 30px;
+    }
+
+    .hero-content a {
+      padding: 15px 35px;
+      background-color: #4caf50;
+      color: white;
+      text-decoration: none;
+      border-radius: 30px;
+      font-size: 1em;
+      transition: background-color 0.3s;
+    }
+
+    .hero-content a:hover {
+      background-color: #388e3c;
+    }
+
+    section {
+      padding: 80px 40px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .about {
+      text-align: center;
+    }
+
+    .about h2 {
+      font-size: 2em;
+      color: #2e7d32;
+      margin-bottom: 20px;
+    }
+
+    .about p {
+      font-size: 1.1em;
+      color: #555;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    .products {
+      margin-top: 60px;
+    }
+
+    .products h2 {
+      text-align: center;
+      font-size: 2em;
+      color: #2e7d32;
+      margin-bottom: 40px;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 30px;
+    }
+
+    .product {
+      background-color: white;
+      border-radius: 16px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+
+    .product:hover {
+      transform: scale(1.03);
+    }
+
+    .product img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+
+    .product h3 {
+      margin: 15px;
+    }
+
+    .product p {
+      margin: 0 15px 20px;
+      color: #4caf50;
+      font-weight: 600;
+    }
+
+    .footer-cta {
+      text-align: center;
+      margin-top: 80px;
+    }
+
+    .footer-cta a {
+      background-color: #4caf50;
+      color: white;
+      padding: 15px 30px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-size: 1.1em;
+    }
+
+    .footer-cta a:hover {
+      background-color: #2e7d32;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        padding: 15px;
+      }
+
+      nav ul {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+      }
+
+      .hero-content h1 {
+        font-size: 2em;
+      }
+
+      .hero-content p {
+        font-size: 1em;
+      }
+    }
+
+    .footer {
+      background-color: #2e7d32;
+      color: #d0f0c0;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.95rem;
+      border-top: 2px solid #81c784;
+      margin-top: 40px;
+      border-radius: 12px 12px 0 0;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="logo">PRO NEW LIFE</div>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="pro new life.html">Produktet</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero">
+ 
+    <video autoplay muted loop playsinline class="background-video">
+      <source src="WhatsApp Video 2025-06-25 at 18.07.22_3ee3ef97.mp4" type="video/mp4" />
+      
+    </video>
+
+    <div class="hero-content">
+      <h1>Zbuloni më të mirën e natyrës</h1>
+      <p>Organike, e qëndrueshme . Mirë se vini në Pro New Life.</p>
+      <a href="pro new life.html">Eksploroni Produktet</a>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <h2>Rreth nesh</h2>
+    <p>Në PRO NEW LIFE, ne besojmë se mirëqenia e vërtetë fillon me përbërës natyralë. Kjo është arsyeja pse ne ju sjellim produktet më të mira organike, të siguruara në mënyrë etike dhe të krijuara për të mbështetur mendjen, trupin dhe shpirtin tuaj.</p>
+  </section>
+
+  <section id="products" class="products">
+    <h2>OFERTA</h2>
+    <div class="product-grid">
+      <div class="product">
+        <img src="Untitled design (9).png" alt="Coconut Oil">
+        <h3>Matca Ananas</h3>
+        <p>3 pako 2000 leke</p>
+      </div>
+      <div class="product">
+        <img src="Untitled design (11).png" alt="Matcha Tea">
+        <h3> Matcha Luleshtyrdhe</h3>
+        <p>3 pako 2000 leke</p>
+      </div>
+      <div class="product">
+        <img src="Untitled design (13).png" alt="Lavender Oil">
+        <h3>Matcha Kapsul</h3>
+        <p>3 pako 2500 leke</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    &copy; 2025 PRO NEW LIFE. Të gjitha të drejtat e rezervuara.
+  </footer>
+
+</body>
+</html>
