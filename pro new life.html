@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="sq">
 <head>
+	<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>PRO NEW LIFE - Produktet</title>
@@ -189,12 +191,93 @@
   gap: 15px;                  
 
 }
+	  .back-home-button {
+  background: linear-gradient(135deg, #43a047, #1b5e20);
+  color: #fff;
+  padding: 12px 28px;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.back-home-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+  background: linear-gradient(135deg, #66bb6a, #2e7d32);
+}
+.main-header {
+  background: linear-gradient(135deg, #e8f5e9, #c8e6c9);
+  padding: 20px 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  border-bottom: 2px solid #a5d6a7;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background-color: #f5f5f5;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  position: relative;
+}
+
+.logo {
+  height: 60px;
+}
+
+.header-content h1 {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: #2e7d32;
+  margin: 0;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.spacer {
+  width: 60px; /* same as logo height to keep it balanced */
+}
+
+
+
   </style>
 </head>
 <body>
 
 	
-<header>PRO NEW LIFE</header>
+<header class="main-header">
+<div class="header-content">
+  <img src="Black_And_White_Minimalist_Typography_Personal_Logo-removebg-preview.png" alt="Logo" class="logo" />
+  <h1>PRO NEW LIFE</h1>
+  <div class="spacer"></div> <!-- empty block to help centering -->
+</div>
+
+
+</header>
+
 	
 <input type="text" id="searchInput" placeholder="Search..." onkeyup="searchFunction()" />
 	
@@ -205,8 +288,15 @@
 	   <a href="sk suplemnteve.html" class="category-item">Suplementet</a>
     <a href="sk vajrat.html" class="category-item">Vajrat</a>
     <a href="sk kozmetik.html" class="category-item">Kozmetik</a>
+	  <a href="SK produkte per potence.html" class="category-item">Produkte per potence</a>
   </div>
 	
+	<div style="text-align: center; margin: 30px 0;">
+  <a href="index.html" class="back-home-button">
+    ⬅ Kthehu te Faqja Kryesore
+  </a>
+</div>
+
 
 <div class="product-grid">
    <a href="ananaas.html" class="product">
@@ -589,6 +679,253 @@
   <p>MAG 3 është një suplement me përthithje të lartë që kombinon tre forma të magnezit për të mbështetur muskujt, sistemin nervor dhe energjinë në mënyrë natyrale dhe efektive.
  </p>
 </a>
+	
+	
+	<a href="Vaj i Farës se Zeze 50 ml.html" class="product">
+    <img src="foto (20).png" alt="Vaj i Farës se Zeze 50 ml"  >
+    <h3>Vaj i Farës se Zeze 50 ml</h3>
+    <p>Vaji i farës së zezë është një kurë natyrale shumëfunksionale që mbështet imunitetin, tretjen, lëkurën dhe shëndetin e përgjithshëm në mënyrë të sigurt dhe efektive.</p>
+  </a>
+	  
+	   <a href="Vaj kantarioni 50 ml.html" class="product">
+    <img src="foto (21).png" alt="Vaj i Farës se Zeze 50 ml"  >
+    <h3>Vaj kantarioni 50 ml</h3>
+    <p>Vaji i kantarionit është një zgjidhje natyrale për shërimin e lëkurës së irrituar, plagëve dhe dhimbjeve muskulore, me efekt qetësues dhe rigjenerues.</p>
+  </a>
+	  
+	
+	   <a href="Vaj bajamesh i ëmbël 50 ml.html" class="product">
+    <img src="foto (22).png" alt="Vaj i Farës se Zeze 50 ml"  >
+    <h3>Vaj bajamesh i ëmbël 50 ml</h3>
+    <p>Vaji i bajames së ëmbël është një hidratues natyral shumëfunksional për lëkurën, flokët dhe kujdesin e foshnjave, i butë dhe i sigurt për përdorim të përditshëm.</p>
+  </a>
+	  
+	
+	
+	   <a href="Vaj i farave të rrushit 50 ml.html" class="product">
+    <img src="foto (23).png" alt="Vaj i Farës se Zeze 50 ml"  >
+    <h3>Vaj i farave të rrushit 50 ml</h3>
+    <p>Vaji i farave të rrushit është një hidratues i lehtë dhe natyral që ndihmon në balancimin e lëkurës me yndyrë, parandalimin e akneve dhe mbrojtjen nga plakja e parakohshme.</p>
+  </a>
+	  
+	 
+	
+	
+	   <a href="Vaj Peme Çaji 20 ml.html" class="product">
+    <img src="foto (24).png" alt="Vaj i Farës se Zeze 50 ml"  >
+    <h3>Vaj Peme Çaji 20 ml</h3>
+    <p>Vaj esencial 100% natyral, veprim antibakterial, antifungal dhe anti-inflamator – ideal për akne, lëkurë problematike, zbokth dhe trajtim të plagëve të vogla. Hollohet me vaj bazë.</p>
+  </a>
+	  
+	  <a href="Vaj menteje 20 ml.html" class="product">
+    <img src="foto (25).png" alt="Vaj i Farës se Zeze 50 ml"  >
+    <h3>Vaj menteje 20 ml</h3>
+    <p>Vaj esencial 100% natyral, veprim antibakterial, antifungal dhe anti-inflamator – ideal për akne, lëkurë problematike, zbokth dhe trajtim të plagëve të vogla. Hollohet me vaj bazë</p>
+  </a>
+	  
+	  <a href="Vaj lëkure limoni 20 ml.html" class="product">
+    <img src="foto (26).png" alt="Vaj i Farës se Zeze 50 ml"  >
+    <h3>Vaj lëkure limoni 20 ml</h3>
+    <p>Vaj esencial limoni 20 ml – efekt astringjent dhe antibakterial për lëkurë të ndriçuar, reduktim të dritës dhe ndriçim natyral. Aromë që ngre humorin.</p>
+  </a>
+	  
+	<a href="Vaj me Vitaminë E 20 ml.html" class="product">
+    <img src="foto (58).png" alt="Vaj i Farës se Zeze 50 ml"  >
+    <h3>Vaj me Vitaminë E 20 ml</h3>
+    <p>Përmirëson funksionin imunitar dhe mbron qelizat nga dëmtimet oksidative.</p>
+  </a>
+	  
+	
+	  <a href="Vaj karafil 20 ml.html" class="product">
+    <img src="foto (27).png" alt="Vaj i Farës se Zeze 50 ml"  >
+    <h3>Vaj karafil 20 ml</h3>
+    <p>Vaj esencial karafil 20 ml – i shëndetshëm antibakterial dhe analgjezik, ideal për dhimbje të dhëmbëve, pastrime të dhe aromaterapi.</p>
+  </a>
+	  
+	  
+	  
+	  <a href="Vaj Livandoje 20 ml.html" class="product">
+    <img src="foto (28).png" alt="Vaj i Farës se Zeze 50 ml"  >
+    <h3>Vaj Livandoje 20 ml</h3>
+    <p>Një vaj esencial natyral me përdorimin e shumë relaksuese dhe kuruese, i njohur për efektin qetësues ndaj stresit, kujdesin e gjumit, kujdesin ndaj kujdesit ndaj dhimbjes dhe dhimbjes.</p>
+  </a>
+	  
+	 
+	  <a href="Vaj i Farës së zezë 250 ml.html" class="product">
+    <img src="foto (29).png" alt="Vaj i Farës se Zeze 50 ml"  >
+    <h3>Vaj i Farës së zezë 250 ml</h3>
+    <p>Vaji i farës së zezë merret nga farat e bimës Nigella sativa dhe njihet për vetitë e tij të fuqishme mjekësore dhe përbërësin kryesor thymoquinone, që ka efekte anti-inflamatore, antioksiduese dhe antibakteriale.</p>
+  </a>
+	  
+	 
+	  <a href="Vaj farash liri 250 ml.html" class="product">
+    <img src="foto (30).png" alt="Vaj i Farës se Zeze 50 ml"  >
+    <h3>Vaj farash liri 250 ml</h3>
+    <p>Vaji i farës së lirit  nxirret nga farat e lirit përmes presimit të ftohtë dhe është i pasur me acide yndyrore Omega-3, vitamina E dhe antioksidantë. Përdoret si suplement ushqimor dhe për kujdesin e lëkurës dhe flokëve.</p>
+  </a>
+	    
+	  <a href="Vaj farash kungulli 250 ml.html" class="product">
+    <img src="foto (31).png" alt="Vaj i Farës se Zeze 50 ml"  >
+    <h3>Vaj farash kungulli 250 ml</h3>
+    <p>Vaji i farave të kungullit është një vaj natyral i presuar në të ftohtë, i pasur me zink, magnez, Omega 6 dhe 9, vitaminë E, dhe përbërës bioaktivë që e bëjnë shumë të vlefshëm për shëndetin e prostatës, zemrës, lëkurës dhe flokëve.</p>
+  </a>
+	   
+	    
+	  <a href="Vaj kantarioni 250 ml.html" class="product">
+    <img src="foto (32).png" alt="Vaj i Farës se Zeze 50 ml"  >
+    <h3>Vaj kantarioni 250 ml</h3>
+    <p>Vaji i kantarionit nxirret nga lulja e kantarionit, zakonisht i përzier me vaj ulliri ose vaj tjetër bimor. Njihet për vetitë e tij qetësuese, shëruese dhe anti-inflamatore, si për përdorim të jashtëm, ashtu edhe të brendshëm me kujdes.</p>
+  </a>
+	     
+	      
+	    
+	  <a href="Vaj bajamesh i ëmbël 250 ml.html" class="product">
+    <img src="foto (34).png" alt="Vaj i Farës se Zeze 50 ml"  >
+    <h3>Vaj bajamesh i ëmbël 250 ml</h3>
+    <p>Vaji i bajames së ëmbël është një vaj bimor i butë dhe i ëmbël, i sëmurë nga farat e bajames së ëmbël, përmes presimit në të ftohtë. Është shumë e pasur me vitamina A, E, B , acide yndyrore dhe antioksidante , duke e bërë ideale për lëkurën e ndjeshme, foshnje, dhe kujdes të përditshëm.</p>
+  </a>
+	
+	<a href="Shampo me ekstrakt kokosi.html" class="product">
+    <img src="foto (35).png" alt="Vaj Kokosi">
+    <h3>Shampo me ekstrakt kokosi</h3>
+    <p>Shampoja Softem me kokos është një shampo bimore që përmban ekstrakt kokosi dhe ekstrakte bimore.</p>
+  </a>
+	  
+	    
+  <a href="Shampo me ekstrakt hudhre.html" class="product">
+    <img src="foto (36).png" alt="Vaj Kokosi">
+    <h3>Shampo me ekstrakt hudhre </h3>
+    <p>Shampoja Softem me ekstrakt hudhre është një shampo bimore që përmban ekstrakt hudhre dhe ekstrakte bimore.</p>
+  </a>
+	  
+	  	    
+  <a href="Shampo me ekstrakt hithre.html" class="product">
+    <img src="foto (37).png" alt="Vaj Kokosi">
+    <h3>Shampo me ekstrakt hithre </h3>
+    <p> Shampoja Softem me hithër është një shampo që përmban ekstrakt hithre dhe ekstrakte bimore.</p>
+  </a>	  
+	  	    
+  <a href="Shampo me vaj argani.html" class="product">
+    <img src="foto (38).png" alt="Vaj Kokosi">
+    <h3>Shampo me vaj argani  </h3>
+    <p>Shampoja Softem për kujdesin e flokëve me vaj argani është një shampo që përmban ekstrakt argani dhe ekstrakte bimore.</p>
+  </a>
+	    
+  <a href="Shampo me esencë keratine bimore.html" class="product">
+    <img src="foto (39).png" alt="Vaj Kokosi">
+    <h3>Shampo me esencë keratine bimore  </h3>
+    <p>Shampoja Softem Bimore Keratin Essence është një shampo bimore që përmban keratinë bimore dhe ekstrakte bimore.</p>
+	  </a>
+
+	      
+  <a href="Shampo me ekstrakt dëllinje dhe peme çaji.html" class="product">
+    <img src="foto (40).png" alt="Vaj Kokosi">
+    <h3>Shampo me ekstrakt dëllinje dhe peme çaji</h3>
+    <p> Shampoja Softem me dëllinjë dhe pemë çaji është një shampo që përmban dëllinjë, ekstrakt të pemës së çajit dhe ekstrakte bimore.</p>
+	  </a>
+
+	  	      
+  <a href="Shampo me ekstrakt dafine dhe vaj ulliri.html" class="product">
+    <img src="foto (41).png" alt="Vaj Kokosi">
+    <h3>Shampo me ekstrakt dafine dhe vaj ulliri </h3>
+    <p> Shampoja Softem me dafinë dhe vaj ulliri është një shampo natyrale që përmban vaj ulliri, ekstrakt dafine dhe ekstrakte bimore</p>
+	  </a>
+
+	  <a href="Sapun me fibra kokosi.html" class="product">
+    <img src="foto (42).png" alt="Vaj Kokosi">
+    <h3>Sapun me fibra kokosi</h3>
+    <p>Sapuni Softem me fibra kokosi është një sapun i formuluar posaçërisht me përbërës natyralë, duke përfshirë fibra natyrale kungulli dhe vaj kokosi. </p>
+  </a>
+	  
+	  <a href="Sapun me fibra mjalti dhe pelte mbretërore.html" class="product">
+    <img src="foto (43).png" alt="Vaj Kokosi">
+    <h3>Sapun me fibra mjalti dhe pelte mbretërore</h3>
+    <p> Sapuni me fibra mjalti dhe pelte mbretërore është një sapun i prodhuar posaçërisht me përbërës natyralë që përmbajnë fibra natyrale kungulli, pelte mbretërore dhe mjaltë.</p>
+  </a>
+	  
+	  <a href="Sapun me fibra dhe vaj limoni.html" class="product">
+    <img src="foto (44).png" alt="Vaj Kokosi">
+    <h3>Sapun me fibra dhe vaj limoni </h3>
+    <p>Sapuni me fibra me vaj limoni është një sapun i prodhuar posaçërisht me përbërës natyralë si fibra natyrale e kungullit, vaji i farave të limonit dhe glicerina.</p>
+  </a>
+	  
+	  <a href="Sapun me fibra vaji portokalli.html" class="product">
+    <img src="foto (45).png" alt="Vaj Kokosi">
+    <h3>Sapun me fibra vaji portokalli</h3>
+    <p>Sapuni me fibra vaji portokalli është një sapun i prodhuar posaçërisht me fibra natyrale kungulli dhe glicerinë që ushqen lëkurën.</p>
+  </a>
+	  
+	  <a href="Sapun me fibra me vaj çaji dhe kalendule.html" class="product">
+    <img src="foto (46).png" alt="Vaj Kokosi">
+    <h3>Sapun me fibra me vaj çaji dhe kalendule </h3>
+    <p>Sapuni fibroz me vaj çaji dhe kalendule është një sapun i prodhuar posaçërisht që përmban fibra natyrale kungulli, vajra të çmuar dhe glicerinë.</p>
+  </a>
+	 
+	  <a href="Balsam me pemë çaji dhe kalendulë.html" class="product">
+    <img src="foto (47).png" alt="Vaj Kokosi">
+    <h3>Balsam me pemë çaji dhe kalendulë </h3>
+    <p>Balsami Softem me vaj të pemës së çajit dhe kalendulës, që kombinon vajin e pemës së çajit dhe vajin e kalendulës me dyllin natyral të bletës, është një produkt i mrekullueshëm për lëkurën e thatë, të dëmtuar dhe të irrituar. </p>
+  </a>
+	  
+	  <a href="Vaj për kujdesin e flokëve me gjalpë të butë.html" class="product">
+    <img src="foto (48).png" alt="Vaj Kokosi">
+    <h3>Vaj për kujdesin e flokëve me gjalpë të butë</h3>
+    <p> Është një produkt natyral për kujdesin e flokëve, shumë absorbues, i bërë me tetë vajra të ndryshëm që u sjellin dobi flokëve.</p>
+  </a>
+	  
+	  <a href="Vaj për kujdesin e flokëve me gjalpë të butë 2.html" class="product">
+    <img src="foto (50).png" alt="Vaj Kokosi">
+    <h3>Vaj për kujdesin e flokëve me gjalpë të butë</h3>
+    <p>Është një produkt natyral për kujdesin e lëkurës me përthithje të fortë, i përgatitur me 8 lloje vajrash që janë të dobishëm për lëkurën dhe të mbështetur nga vitamina C.</p>
+  </a>
+	 
+	<a href="ÇOKOLLATE Q7.html" class="product">
+    <img src="foto (51).png" alt="Produkt 6">
+    <h3>ÇOKOLLATE Q7</h3>
+		</a>
+	
+  </a>
+	  <a href="Çokollate Q7 per femra.html" class="product">
+    <img src="foto (52).png" alt="Produkt 6">
+    <h3>Çokollate Q7 per femra</h3>
+
+  </a>
+	  <a href="Çokollate Q7 e madhe.html" class="product">
+    <img src="foto (53).png" alt="Produkt 6">
+    <h3>Çokollate Q7 e madhe</h3>
+		  
+   <a href="Çokollate Q7 e madhe per femra.html" class="product">
+    <img src="foto (56).png" alt="Produkt 6">
+    <h3>Çokollate Q7 e madhe per femra</h3>
+
+  </a>
+  </a>
+	  <a href="Çokollate Q7 kavanoz i madhe.html" class="product">
+    <img src="foto (54).png" alt="Produkt 6">
+    <h3>Mjalte Q7 kavanoz i madhe</h3>
+
+  </a>
+	  <a href="Çokollate Q7 kavanoz i vogel.html" class="product">
+    <img src="foto (54).png" alt="Produkt 6">
+    <h3>Mjalte Q7 kavanoz i vogel</h3>
+   
+  </a>
+	  <a href="Mjalte Q7 kavanoz i vogel per femra.html" class="product">
+    <img src="foto (55).png" alt="Produkt 6">
+    <h3>Çokollate Q7 kavanoz i vogel per femra</h3>
+
+  </a> 
+	<a href="ÇOKOLLATE Q7.html" class="product">
+    <img src="foto (51).png" alt="Produkt 6">
+    <h3>ÇOKOLLATE Q7</h3>
+		</a>
+		
+	  <a href="Mjalte Q7.html" class="product">
+    <img src="foto (57).png" alt="Produkt 6">
+    <h3>Mjalte Q7</h3>
+   
+  </a>
+	
 </div>
 
 <footer class="footer">
