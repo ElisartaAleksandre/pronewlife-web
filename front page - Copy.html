@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PRO NEW LIFE</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f5f8fa;
+    color: #333;
+    scroll-behavior: smooth;
+  }
+
+  nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+  }
+
+  nav .logo {
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #4caf50;
+  }
+
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+  }
+
+  nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+
+  nav ul li a:hover {
+    color: #4caf50;
+  }
+
+  .hero {
+    height: 100vh;
+    background: url("WhatsApp Image 2025-07-08 at 15.40.40_c09bd01e.jpg") no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+  }
+
+  .hero::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .hero-content {
+    position: relative;
+    color: white;
+    z-index: 1;
+    max-width: 700px;
+    padding: 20px;
+  }
+
+  .hero-content h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+  }
+
+  .hero-content p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+  }
+
+  .hero-content a {
+    padding: 15px 35px;
+    background-color: #4caf50;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 1em;
+    transition: background-color 0.3s;
+  }
+
+  .hero-content a:hover {
+    background-color: #388e3c;
+  }
+
+  section {
+    padding: 80px 40px;
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  .about {
+    text-align: center;
+  }
+
+  .about h2 {
+    font-size: 2em;
+    color: #2e7d32;
+    margin-bottom: 20px;
+  }
+
+  .about p {
+    font-size: 1.1em;
+    color: #555;
+    max-width: 700px;
+    margin: auto;
+  }
+
+  .products {
+    margin-top: 60px;
+  }
+
+  .products h2 {
+    text-align: center;
+    font-size: 2em;
+    color: #2e7d32;
+    margin-bottom: 40px;
+  }
+
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+  }
+
+  .product {
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s;
+  }
+
+  .product:hover {
+    transform: scale(1.03);
+  }
+
+  .product img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+  }
+
+  .product h3 {
+    margin: 15px;
+  }
+
+  .product p {
+    margin: 0 15px 20px;
+    color: #4caf50;
+    font-weight: 600;
+  }
+
+  .footer-cta {
+    text-align: center;
+    margin-top: 80px;
+  }
+
+  .footer-cta a {
+    background-color: #4caf50;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 1.1em;
+  }
+
+  .footer-cta a:hover {
+    background-color: #2e7d32;
+  }
+
+  .footer {
+    background-color: #2e7d32;
+    color: #d0f0c0;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.95rem;
+    border-top: 2px solid #81c784;
+    margin-top: 40px;
+    border-radius: 12px 12px 0 0;
+  }
+
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .footer .social-links a {
+    margin: 0 10px;
+    display: inline-block;
+  }
+
+  .footer .social-links img {
+    width: 30px;
+    height: 30px;
+    filter: brightness(0) invert(1);
+    transition: transform 0.3s ease;
+  }
+
+  .footer .social-links img:hover {
+    transform: scale(1.1);
+  }
+
+  .shop-row {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 60px auto;
+    flex-wrap: wrap;
+  }
+
+  .shop-item {
+    text-align: center;
+
+    text-decoration: none;
+    color: #2e7d32;
+    font-weight: 600;
+    transition: transform 0.3s ease;
+  }
+
+  .shop-item:hover {
+    transform: scale(1.05);
+  }
+
+  .shop-item img {
+    width: 240px;       /* ✅ updated */
+    height: 240px;      /* ✅ updated */
+    object-fit: cover;
+    border-radius: 16px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+  }
+
+  .shop-item p {
+    margin-top: 10px;
+    font-size: 1rem;
+  }
+
+  @media (max-width: 768px) {
+    nav {
+      flex-direction: column;
+      padding: 15px;
+    }
+
+    nav ul {
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 10px;
+    }
+
+    .hero-content h1 {
+      font-size: 2em;
+    }
+
+    .hero-content p {
+      font-size: 1em;
+    }
+
+    .shop-item img {
+      width: 200px;
+      height: 200px;
+    }
+  }
+</style>
+
+</head>
+<body>
+
+  <nav>
+    <div class="logo">PRO NEW LIFE</div>
+    <ul>
+      <li><a href="#about">About    </a></li>
+		
+      <li><a href="pro new life.html">     Produktet</a></li>
+  
+    </ul>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Zbuloni më të mirën e natyrës</h1>
+      <p>Organike, e qëndrueshme . Mirë se vini në Pro New Life.</p>
+      <a href="pro new life.html">Eksploroni Produktet</a>
+    </div>
+  </section>
+
+	<section class="shop-row">
+  <a href="sk matcha.html" class="shop-item">
+    <img src="Green and White Dynamic Matcha Your Story.png" alt="Matcha" />
+    <p>Matchat</p>
+  </a>
+  <a href="sk suplemnteve.html" class="shop-item">
+    <img src="Brown and White Illustration Coffe Cup Mockup Instagram Post (1).png" alt="Kapsula" />
+    <p>Suplementet</p>
+  </a>
+  <a href="sk vajrat.html" class="shop-item">
+    <img src="Beige Brown Simple Hair Care Product Instagram Post.png" alt="Vaj Kokosi" />
+    <p>Vajrat</p>
+  </a>
+		<a href="sk kozmetik.html" class="shop-item">
+    <img src="porosit tani.png" alt="Vaj Kokosi" />
+    <p>Kozmetik</p>
+  </a>
+</section>
+
+
+  <section id="about" class="about">
+    <h2>Rreth nesh</h2>
+    <p>Në PRO NEW LIFE, ne besojmë se mirëqenia e vërtetë fillon me përbërës natyralë. Kjo është arsyeja pse ne ju sjellim produktet më të mira organike, të siguruara në mënyrë etike dhe të krijuara për të mbështetur mendjen, trupin dhe shpirtin tuaj.</p>
+  </section>
+
+<section id="products" class="products">
+    <h2>OFERTA</h2>
+    <div class="product-grid">
+      <div class="product">
+        <img src="Untitled design (9).png" alt="Coconut Oil">
+        <h3>Matca Ananas</h3>
+        <p>3 pako 2000 leke</p>
+      </div>
+      <div class="product">
+        <img src="Untitled design (11).png" alt="Matcha Tea">
+        <h3> Matcha Luleshtyrdhe</h3>
+        <p>3 pako 2000 leke</p>
+      </div>
+      <div class="product">
+        <img src="Untitled design (13).png" alt="Lavender Oil">
+        <h3>Matcha Kapsul</h3>
+        <p>3 pako 2500 leke</p>
+      </div>
+    </div>
+
+<footer class="footer">
+  <p>Për të qëndruar të përditësuar me ofertat tona, na ndiqni në rrjetet sociale duke klikuar ikonat:</p>
+
+  <div style="margin-top: 10px;">
+    <a href="https://www.instagram.com/pronewlife.al/" target="_blank" aria-label="Instagram" style="margin: 0 10px;">
+      <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="#d0f0c0" viewBox="0 0 24 24">
+        <path d="M12 2.2c3.2 0 3.6 0 4.8.1 1.1.1 1.8.2 2.3.4.6.2 1 .5 1.4.9s.7.8.9 1.4c.2.5.3 1.2.4 2.3.1 1.2.1 1.6.1 4.8s0 3.6-.1 4.8c-.1 1.1-.2 1.8-.4 2.3-.2.6-.5 1-.9 1.4s-.8.7-1.4.9c-.5.2-1.2.3-2.3.4-1.2.1-1.6.1-4.8.1s-3.6 0-4.8-.1c-1.1-.1-1.8-.2-2.3-.4-.6-.2-1-.5-1.4-.9s-.7-.8-.9-1.4c-.2-.5-.3-1.2-.4-2.3C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.8c.1-1.1.2-1.8.4-2.3.2-.6.5-1 .9-1.4s.8-.7 1.4-.9c.5-.2 1.2-.3 2.3-.4C8.4 2.2 8.8 2.2 12 2.2zM12 5.8a6.2 6.2 0 1 0 0 12.4 6.2 6.2 0 0 0 0-12.4z"/>
+        <circle cx="18.4" cy="5.6" r="1.4"/>
+      </svg>
+    </a>
+
+    <a href="https://www.facebook.com/profile.php?id=100091656653442" target="_blank" aria-label="Facebook" style="margin: 0 10px;">
+      <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="#d0f0c0" viewBox="0 0 24 24">
+        <path d="M22 12a10 10 0 1 0-11.6 9.9v-7h-2v-2.9h2V9.5c0-2 1.2-3.1 3-3.1.9 0 1.8.1 1.8.1v2h-1c-1 0-1.3.6-1.3 1.2v1.5h2.3l-.4 2.9h-1.9v7A10 10 0 0 0 22 12z"/>
+      </svg>
+    </a>
+
+    <!-- Address + Google Map -->
+    <p style="margin-top: 30px;"><strong>Adresa:</strong> Rruga Xhanfize Keko, Tiranë, Shqipëri</p>
+    <div style="margin-top: 10px; border-radius: 12px; overflow: hidden;">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2992.0262456045357!2d19.834181576546403!3d41.335287771305634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350315486e2bc83%3A0x271c98df2445248c!2sPro%20New-Life!5e0!3m2!1sen!2s!4v1721553127713!5m2!1sen!2s" 
+        width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+
+    <p style="margin-top: 30px;">&copy; 2025 PRO NEW LIFE. Të gjitha të drejtat e rezervuara.</p>
+  </div>
+</footer>
+
+
+	
+  </div>
+</footer>
+
+
+  </section>
+</body>
+</html>
